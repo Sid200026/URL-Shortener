@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name = "home"),
-    path('<slug:detail>', views.redirect, name = "redirect"),
-    path('error/', views.error, name = "error"),
+    path('error', views.error, name = "error"),     
+    path('<slug:detail>', views.redirect, name = "redirect"),   
 ]
