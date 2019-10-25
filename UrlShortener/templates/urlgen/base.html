@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Short URL</title>
+    <link href={% static 'urlgen/CSS/base.css' %} rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class = "container">
+        <div class="title">
+            <h1><span class="a1">URL</span> <span class="a2">Sho</span><span class="a3">rte</span><span class="a4">ner</span></h1>
+        </div>
+        <div class="search">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div class = "footer">
+            <a class="link" target="_blank" href="https://github.com/Sid200026/">Made by Siddharth Singha Roy</a>
+        </div>
+    </div>
+</body>
+</html>
