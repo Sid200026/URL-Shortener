@@ -3,11 +3,11 @@
 <form method='POST'>
     {% csrf_token %}
     <div class="search">
-        <label class="headlabel" for="bigurl">Enter the URL to be shortened</label>
-        <input type = "text" class="bigurl noSelect" placeholder = "Enter an URL...." name = "bigurl" required></input>
+        <label class="headlabel" for="bigurl">Actual URL</label>
+        <input type = "text" value = {{url.big_url}} class="bigurl noSelect" placeholder = "Enter an URL...." name = "bigurl" required></input>
         <label class="headlabel" for="bigurl">Shortened URL</label>
-        <input type = "text" class="bigurl noSelect result" placeholder = "Result" name = "shortURL" readonly></input>
-        <input type = "submit" value = "Shorten URL" class="submit noSelect"></input>
+        <input type = "text" value = {{url.short_url}} class="bigurl noSelect result" placeholder = "Result" name = "shortURL" readonly></input>
+        <a href={% url 'urlgen:home' %}><input type = "button" value = "Shorten Another URL" class="submit noSelect"></input></a>
     </div>
 </form>
 {% endblock %}
