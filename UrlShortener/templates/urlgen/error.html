@@ -1,1 +1,5 @@
 {% extends 'urlgen/base.html'%}
+{% block content %}
+<h1 class="error">Oops... NO such URL exists</h1>
+<a class="nounderline" href={% url 'urlgen:home' %}><h1>If you want to generate a shortened URL, Click here</h1></a>
+{% endblock %}

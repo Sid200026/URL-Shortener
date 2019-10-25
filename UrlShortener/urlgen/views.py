@@ -4,11 +4,11 @@ from django.shortcuts import get_object_or_404, render, reverse
 
 # Create your views here.
 def home(request):
-    return render(request, 'urlgen/base.html')
+    return render(request, 'urlgen/home.html')
 
 def redirect(request, detail):
-    return HttpResponse("Redirect")
+    return render(request, 'urlgen/redirect.html')
 
 def error(request):
-    return HttpResponse("Error")
+    return render(request, 'urlgen/error.html')
 

@@ -7,6 +7,10 @@ html, body{
     height: 100%;
     background: linear-gradient(to right, rgb(228, 228, 64), rgb(255, 187, 245));
 }
+.noSelect {
+    outline: none;
+}
+
 .container{
     position: relative;
     display: flex;
@@ -19,6 +23,7 @@ html, body{
     position: absolute;
     top:50px;
     font-size: 30px;
+    text-shadow: 0 0 2px black;
 }
 .footer{
     position: absolute;
@@ -51,4 +56,39 @@ html, body{
 }
 .a4{
     color:blueviolet;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bigurl{
+    width: 400px;
+    height:45px;
+    border-radius: 30px;
+    padding:10px;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+.submit{
+    width:160px;
+    background: green;
+    color:white;
+    height:48px;
+    border-radius: 80px;
+    box-shadow: 0 0 11px black;
+}
+.headlabel{
+    color:blue;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.nounderline{
+    text-decoration: none;
+}
+.error{
+    margin-bottom: 20px;
+    font-weight: 100;
 }

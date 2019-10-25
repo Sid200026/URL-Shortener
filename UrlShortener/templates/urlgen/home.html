@@ -1,1 +1,13 @@
 {% extends 'urlgen/base.html'%}
+{% block content %}
+<form method='POST'>
+    {% csrf_token %}
+    <div class="search">
+        <label class="headlabel" for="bigurl">Enter the URL to be shortened</label>
+        <input type = "text" class="bigurl noSelect" placeholder = "Enter an URL...." name = "bigurl" required></input>
+        <label class="headlabel" for="bigurl">Preferred URL path</label>
+        <input type = "text" class="bigurl noSelect result" placeholder = "Preferred URL path name" name = "preferred"></input>
+        <input type = "button" value = "Shorten URL" class="submit noSelect"></input>
+    </div>
+</form>
+{% endblock %}
