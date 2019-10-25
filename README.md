@@ -1,4 +1,4 @@
-# A URL Shortener made using Django
+# An URL Shortener made using Django
 
 ## Example
 ![](homepage.png)
